@@ -2,14 +2,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" id="ldblog-standard">
 <head>
-<$HeadSectionCommon$>
-<$OGP$>
-<IfFoafUrl><link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" /></IfFoafUrl>
-<title><$BlogTitle ESCAPE$>:<$MonthLabel ESCAPE$></title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<title><$MonthLabel ESCAPE$> | <$BlogTitle ESCAPE$></title>
+<meta name="description" content="<$BlogDescription$>" />
+<meta name="keywords" content="半袖,半袖野郎,ビール" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link rel="stylesheet" href="<$CSSUrl$>" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<$RSSUrl$>" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="<$AtomUrl$>" />
 </head>
-<body class="wave monthly"><a name="top"></a>
-<$BlogHeader$>
-
+<body>
+<a name="top"></a>
 <div id="container"> 
 <div id="banner"> 
 <h1 class="blogtitle"><a href="<$BlogUrl$>" accesskey="1"><$BlogTitle ESCAPE$></a></h1>
@@ -19,8 +23,10 @@
 <div id="blogcontainer">
 <div id="content"> 
 <div id="blog">
-<div id="categorytitlebody"><h2 id="categorytitle"><$MonthLabel$></h2></div>
-<!-- google_ad_section_start -->
+<div id="categorytitlebody">
+<h2 id="categorytitle"><$MonthLabel$></h2>
+<!-- ### 半袖blog 1つ目記事上 ### -->
+</div>
 <MonthlyArticlesLoop>
 <$TrackBackAutoDiscovery$>
 <div class="datetop"></div>
@@ -29,20 +35,55 @@
 <div class="blogbodytop"></div>
 <div class="blogbody">
 <a name="<$ArticleId$>"></a>
-<div class="titlebody"><h3 class="title"><$ArticleTitle ESCAPE$><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3></div>
-<div class="main"><$ArticleBody$><IfArticleBodyMore><a href="<$ArticlePermalink$>#more" class="continues">続きを読む</a></IfArticleBodyMore><br><br clear="all"></div>
-<$PortalLinks$>
-<div class="article-social-btn">
-  <$ArticleToolBox$>
+<div class="titlebody">
+<h3 class="title"><$ArticleTitle ESCAPE$><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3>
+
+<!-- bookmarklet上 -->
+<div style="float:right;">
+<a href="http://b.hatena.ne.jp/entry/<$ArticlePermalink$>" class="hatena-bookmark-button" data-hatena-bookmark-title="<$ArticleTitle$>" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 </div>
-<div class="posted"><$ArticleAuthor$> at <$ArticleTime$>｜<a href="<$ArticlePermalink$>">Permalink</a><IfArticleAllowComment>│<a href="<$ArticlePermalink$>#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="<$ArticlePermalink$>#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing><IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
-<IfFirstArticle><$Advertise$></IfFirstArticle>
+<br clear="all" />
+<!-- bookmarklet上 -->
+
 </div>
+<div class="main"><$ArticleBody$><IfArticleBodyMore><a href="<$ArticlePermalink$>" class="continues">続きを読む</a></IfArticleBodyMore><br /><br clear="all" /></div>
+
+<!-- bookmarklet -->
+<div style="float:right;">
+<a href="http://b.hatena.ne.jp/entry/<$ArticlePermalink$>" class="hatena-bookmark-button" data-hatena-bookmark-title="<$ArticleTitle$>" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<iframe src="http://www.facebook.com/plugins/like.php?href=<$ArticlePermalink  URIESCAPE$>&amp;send=false&amp;layout=button_count&amp;width=85&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:102px; height:21px;" allowTransparency="true"></iframe> 
+<a href="javascript:location.href='http://del.icio.us/post?v=4;url='+encodeURIComponent('<$ArticlePermalink$>')+';title='+encodeURIComponent('<$ArticleTitle ESCAPE$>')"><img src="http://blog.hansode.org/images/b-del.gif" style="border: none;" alt="del.icio.usに登録" title="del.icio.usに登録" width="16" height="16" /></a>
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="<$ArticlePermalink$>" data-text="<$BlogTitle$>" data-count="horizontal" data-via="hansode" data-lang="ja">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<a href="<$RSSUrl$>" style="font-size: 12px;"><img src="http://blog.hansode.org/images/rss.png" alt="fig" width="20" height="20" /></a>
+</div>
+<br clear="all" />
+<!-- bookmarklet -->
+
+<IfHasArticleTags><div class="article_tags">タグ: 
+<ArticleTagsLoop><a href="<$ArticleTagAggregateUrl$>" rel="tag"><$ArticleTag ESCAPE$></a> 
+</ArticleTagsLoop></div></IfHasArticleTags>
+<div class="posted">半袖 at <$ArticleTime$>｜<a href="<$ArticlePermalink$>">Permalink</a><IfArticleAllowComment>│<a href="<$ArticlePermalink$>#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="<$ArticlePermalink$>#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing>
+<IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
+
+<IfFirstArticle><div id="ad"></div></IfFirstArticle>
+</div>
+
+<IfFirstArticle>
+<div id="ad">
+<!-- ### 半袖blog 1つ目の記事下 ### -->
+<!-- amazon -->
+<script type="text/javascript"><!--
+  amazon_ad_tag = "kialpi-22";  amazon_ad_width = "468";  amazon_ad_height = "60";  amazon_ad_logo = "hide";  amazon_ad_border = "hide";//--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.jp/s/ads.js"></script>
+<!-- amazon -->
+</div>
+</IfFirstArticle>
+
 <div class="blogbodybottom"></div>
 </div>
 <IfDateFooter><div class="dateend"></div></IfDateFooter>
 </MonthlyArticlesLoop>
-<!-- google_ad_section_end -->
 <div class="nextpage"><IfPrevPage><a href="<$CurrentUrl$>?p=<$PrevPage$>">前のページへ</a></IfPrevPage>
 <IfNextPage>&nbsp;&nbsp;&nbsp;<a href="<$CurrentUrl$>?p=<$NextPage$>">次のページへ</a></IfNextPage></div>
 </div>
@@ -53,17 +94,16 @@
 <div id="linksbody">
 <$PluginList_A$>
 <$PluginList_B$>
-<div class="elsehead"></div>
-<div class="elsebody"><$LDServices$></div>
-<div class="elsebottom"></div>
 </div>
 <div id="linksbottom"></div>
 </div>
 
-<br clear="all">
+<br clear="all" />
 </div><!-- End of blogcontainer-->
 
-<div id="footer"></div>
+<div id="footer">
+</div>
+
 </div><!-- End of container-->
 <div id="outfooter"></div>
 </body>
