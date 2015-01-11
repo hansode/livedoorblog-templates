@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="ldblog-standard">
+<head>
+<$HeadSectionCommon$>
+<$OGP$>
+<IfFoafUrl><link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" /></IfFoafUrl>
+<title><$BlogTitle ESCAPE$>:<$CategoryName ESCAPE$></title>
+</head>
+<body class="wave category"><a name="top"></a>
+<$BlogHeader$>
+
+<div id="container"> 
+<div id="banner"> 
+<h1 class="blogtitle"><a href="<$BlogUrl$>" accesskey="1"><$BlogTitle ESCAPE$></a></h1>
+<div class="description"><$BlogDescription$></div>
+</div>
+
+<div id="blogcontainer">
+<div id="content"> 
+<div id="blog">
+<!-- google_ad_section_start -->
+<div id="categorytitlebody"><h2 id="categorytitle"><$CategoryName ESCAPE$></h2></div>
+<CategorizedArticlesLoop>
+<$TrackBackAutoDiscovery$>
+<div class="datetop"></div>
+<div class="fullbody">
+<IfDateChanged><div class="datebody"><h2 class="date"><$ArticleDate$></h2></div></IfDateChanged>
+<div class="blogbodytop"></div>
+<div class="blogbody">
+<a name="<$ArticleId$>"></a>
+<div class="titlebody"><h3 class="title"><$ArticleTitle ESCAPE$><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3></div>
+<div class="main"><$ArticleBody$><IfArticleBodyMore><a href="<$ArticlePermalink$>#more" class="continues">続きを読む</a></IfArticleBodyMore><br><br clear="all"></div>
+<$PortalLinks$>
+<div class="article-social-btn">
+  <$ArticleToolBox$>
+</div>
+<div class="posted"><$ArticleAuthor$> at <$ArticleTime$>｜<a href="<$ArticlePermalink$>">Permalink</a><IfArticleAllowComment>│<a href="<$ArticlePermalink$>#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="<$ArticlePermalink$>#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing></div>
+<IfFirstArticle><$Advertise$></IfFirstArticle>
+</div>
+<div class="blogbodybottom"></div>
+</div>
+<IfDateFooter><div class="dateend"></div></IfDateFooter>
+</CategorizedArticlesLoop>
+<!-- google_ad_section_end -->
+<div class="nextpage"><IfPrevPage><a href="<$CurrentUrl$>?p=<$PrevPage$>">前のページへ</a></IfPrevPage>
+<IfNextPage>&nbsp;&nbsp;&nbsp;<a href="<$CurrentUrl$>?p=<$NextPage$>">次のページへ</a></IfNextPage></div>
+</div>
+</div>
+
+<div id="links">
+<div id="linkstop"></div>
+<div id="linksbody">
+<$PluginList_A$>
+<$PluginList_B$>
+<div class="elsehead"></div>
+<div class="elsebody"><$LDServices$></div>
+<div class="elsebottom"></div>
+</div>
+<div id="linksbottom"></div>
+</div>
+
+<br clear="all">
+</div><!-- End of blogcontainer-->
+
+<div id="footer"></div>
+</div><!-- End of container-->
+<div id="outfooter"></div>
+</body>
+</html>

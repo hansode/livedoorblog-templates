@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="ldblog-standard">
+<head>
+<$HeadSectionCommon$>
+<meta name="description" content="<$ArticleDescription ESCAPE$>" />
+<$OGP$>
+<link rel="alternate" media="handheld" type="application/xhtml+xml" href="<$ArticleMobilePermalink$>" />
+<IfFoafUrl><link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" /></IfFoafUrl>
+<title><$BlogTitle ESCAPE$>:<$ArticleTitle ESCAPE$></title>
+<script type="text/javascript" src="<$EmojiJsUrl$>"></script>
+<script type="text/javascript" src="<$MiscJsUrl$>"></script>
+</head>
+<body class="wave article">
+<IfCommentNeedAuth><script type="text/javascript" src="<$BlogAuthJsUrl$>"></script></IfCommentNeedAuth>
+<a name="top"></a>
+<$BlogHeader$>
+
+<div id="container"> 
+<div id="banner"> 
+<h1 class="blogtitle"><a href="<$BlogUrl$>" accesskey="1"><$BlogTitle ESCAPE$></a></h1>
+<div class="description"><$BlogDescription$></div>
+</div>
+
+<div id="blogcontainer">
+<div id="content"> 
+<div id="blog">
+<SetVar UseTitlesForPager>1</SetVar><$ArticlePager$>
+
+<div id="articletop"></div>
+<div id="articlebody">
+<!-- google_ad_section_start -->
+<$TrackBackAutoDiscovery$>
+<div class="datebody"><h2 class="date"><$ArticleDate$></h2></div>
+<div class="blogbodytop"></div>
+<div class="blogbody"> 
+<div class="titlebody"><h3 class="title"><$ArticleTitle ESCAPE$><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3></div>
+<div class="main"><$ArticleBody$><br><br clear="all"></div>
+<a name="more"></a>
+<IfArticleBodyMore><div class="mainmore"><$ArticleBodyMore$><br><br clear="all"></div></IfArticleBodyMore>
+<$PortalLinks$>
+<!-- google_ad_section_end -->
+<div class="article-social-btn">
+  <$ArticleToolBox$>
+</div>
+<div class="posted"><$ArticleAuthor$> at <$ArticleTime$><IfArticleAllowComment>│<a href="#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing><IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
+<div class="menu"><a href="<$BlogUrl$>">このBlogのトップへ</a><IfPrevArticle>│<a href="<$PrevArticle$>">前の記事</a></IfPrevArticle><IfNextArticle>│<a href="<$NextArticle$>">次の記事</a></IfNextArticle></div>
+<$Advertise$>
+</div>
+<div class="comblogbodybottom"></div>
+
+<IfArticleAllowPing>
+<div class="trackbackurltop"></div>
+<div class="trackbackurlbody">
+<h3 class="trackbackurlttl">トラックバックURL</h3>
+<div class="trackbackurl">
+<table cellspacing="0" cellspacing="5" border="0">
+<tr>
+<td width="99%"><input type="text" value="<$ArticleTrackBackUrl$>" class="trackbackbox" /></td>
+<td width="1%" align="right"><input type="button" value="クイック" onClick="quickTrackBack('<$ArticlePermalink$>'); return false;" /></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="trackbackurlbottom"></div>
+</IfArticleAllowPing>
+
+<a name="trackback"></a>
+<IfArticlePingCount>
+<div id="trackbacktop"></div>
+<div id="trackback">
+<h3 class="trackbackhead">この記事へのトラックバック</h3>
+<div id="trackbackbody">
+<TrackBacksLoop>
+<div class="trackbackttl"><$TrackBackNumber$>.&nbsp;<a target="_blank" href="<$PingBlogUrl$>" class="posttitle"><$PingTitle ESCAPE$></a>&nbsp;&nbsp;[&nbsp;<$PingBlogName ESCAPE$>&nbsp;]&nbsp;&nbsp;&nbsp;<span><$PingDateTime$></span></div>
+<div class="trackbacktext"><IfTrackBackRating><$TrackBackRatingIcon$></IfTrackBackRating><$PingExcerpt ESCAPE$></div>
+</TrackBacksLoop>
+</div>
+</div>
+<div id="trackbackbottom"></div>
+</IfArticlePingCount>
+
+<a name="comments"></a>
+<IfArticleCommentCount>
+<div id="commenttop"></div>
+<div id="comment">
+<h3 class="commenthead">この記事へのコメント</h3>
+<div id="commentbody">
+<CommentsLoop>
+<div class="commentttl"><$CommentNumber$>.&nbsp;Posted by <IfCommentUrl><a href="<$CommentUrl$>" class="posttitle"><$CommentAuthor ESCAPE$></a><ElseIfCommentEmail><a href="mailto:<$CommentEmail ESCAPE$>" class="posttitle"><$CommentAuthor ESCAPE$></a><Else><$CommentAuthor ESCAPE$></IfCommentUrl>&nbsp;&nbsp;&nbsp;<span><$CommentDateTime$></span></div>
+<div class="commenttext"><IfCommentRating><$CommentRatingIcon$></IfCommentRating><$CommentBody$></div>
+</CommentsLoop>
+</div>
+</div>
+<div id="commentbottom"></div>
+</IfArticleCommentCount>
+
+<$CommentForm$>
+</div>
+<div id="articlebottom"></div>
+
+<$ArticlePager$>
+</div>
+<div id="blogcommentbottom"></div>
+</div>
+<div id="contentcommentbottom"></div>
+
+<div id="links"> 
+<div id="linkstop"></div>
+<div id="linksbody">
+<$PluginList_A$>
+<$PluginList_B$>
+<div class="elsehead"></div>
+<div class="elsebody"><$LDServices$></div>
+<div class="elsebottom"></div>
+</div>
+<div id="linksbottom"></div>
+</div>
+	
+<br clear="all">
+</div><!-- End of blogcontainer-->
+
+<div id="footer"></div>
+</div><!-- End of container-->
+<div id="outfooter"></div>
+<script type="text/javascript" language="javascript">
+<!--
+loadCommentAuthor(document.comment_form);
+//-->
+</script>
+</body>
+</html>

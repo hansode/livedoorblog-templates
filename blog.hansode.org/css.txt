@@ -1,0 +1,568 @@
+@charset "EUC-JP";
+
+/*
+-----------------------------------------------------
+livedoor Blog CSS
+FileName:	building
+Version:	2006.06.26
+-----------------------------------------------------
+*/
+
+	body{
+		margin:0 auto;
+		padding:0;
+		color:#666;
+		text-align:center;
+		font-family: verdana ,arial ,sans-serif;
+		background:#c5c7ca;
+	}
+
+	a{color:#2b5695;}
+	a:link{}
+	a:visited{}
+	a:active{}
+	a:hover{color:#a6a6a6;text-decoration:none;}
+
+	#header{
+		color:#fff;
+		background:#2b5695;
+	}
+
+	#header td{
+		font-size:x-small;
+		text-align:right;
+		padding-right:10px;
+	}
+
+	#header a{color:#fff;}
+	#header a:link{text-decoration:underline;}
+	#header a:visited{text-decoration:underline;}
+	#header a:active{text-decoration:underline;}
+	#header a:hover{text-decoration:none;}
+
+	#container{
+		width:750px;
+		margin:0 auto;
+		padding:0;
+		background:url(http://image.blog.livedoor.com/img/usr/building/bil_back.gif) repeat-y 50% 0;
+		text-align:center;
+		word-break:break-all;
+	}
+
+	#banner,#subbanner{
+		width:750px;
+		height:200px;
+		background:url(http://image.blog.livedoor.com/img/usr/building/bil_p.jpg) no-repeat 50% 0;
+		text-align:left;
+		margin:0 auto;
+	}
+
+	#banner a{color:#fff;text-decoration:none;}
+	#banner a:link{text-decoration:none;}
+	#banner a:visited{text-decoration:none;}
+	#header a:active{text-decoration:none;}
+	#banner a:hover{text-decoration:underline;}
+	
+	h1,h2,h3{margin:0;padding:0;}
+
+	.blogtitle{
+		font-size:24px;
+		font-weight:bold;
+		padding:135px 35px 0 35px;
+		text-align:left;
+		letter-spacing:2px;
+	}
+
+	.description{
+		color:#fff;
+		font-size:12px;
+		font-weight:bold;
+		padding:0 35px 0 35px;
+		text-align:left;
+		letter-spacing:2px;
+	}
+
+	#blogcontainer{
+		width:710px;
+		margin:0 auto;
+		text-align:center;
+		padding-top:20px;
+	}
+
+	#content{
+		float:right;
+		width:490px;
+		text-align:center;
+		margin:0 auto;
+	}
+
+
+	#blog{
+		width:490px;
+		text-align:left;
+		margin:0 auto;
+	}
+
+	#links{
+		float:left;
+		width:180px;
+		background:#fff;
+		margin:0 auto;
+		text-align:center;
+		padding:0px 0px 50px 0;
+	}
+	
+	#linksbody{
+		width:160px;
+		margin:10px auto 0;
+		text-align:center;
+	}
+
+	#categorytitle{
+		color:#2b5695;
+		font-size:16px;
+		font-weight:bold;
+		padding:5px 10px;
+		text-align:center;
+		margin-bottom:20px;
+	}
+
+	.fullbody,#articlebody{
+		width:100%;
+		text-align:left;
+	}
+
+	.datetop,#articletop{
+	}
+
+	.date{
+		color:#fff;
+		font-size:x-small;
+		font-weight:bold;
+		padding:5px 10px 5px 10px;
+		background:#2b5695;
+	}
+
+	.blogbody{
+		padding:10px 0px;
+	}
+
+	.blogbodybottom{
+		margin-bottom:10px;
+	}
+
+	.title{
+		color:#2b5695;
+		font-size:x-small;
+		font-weight:bold;
+	}
+
+/*?*/
+* html .main{height:1%;}
+* html .mainmore{height:1%;}
+/**/
+
+	.main,.mainmore,.portal-links{
+		font-size:x-small;
+		text-align:left;
+		line-height:150%;
+		padding:20px 0px 15px;
+	}
+	
+	blockquote{
+		border:2px dotted #2b5695;
+		margin:10px;
+		padding:10px;
+		text-align:left;
+	}
+	
+	.pict{}
+
+	a.continues{font-size:x-small;}
+	a.continues:link{}
+	a.continues:visited{}
+	a.continues:active{}
+	a.continues:hover{text-decoration:none;}
+
+	.posted{
+		font-size:xx-small;
+		text-align:right;
+		padding:5px 0;
+	}
+
+	.posted a{font-weight:bold;}
+	.posted a:link{}
+	.posted a:visited{}
+	.posted a:active{}
+	.posted a:hover{text-decoration:none;}
+
+ .dateend,#articlebottom{
+		margin-bottom:15px;
+	}
+
+	.nextpage{
+		font-size:x-small;
+		padding:5px 0;
+		text-align:right;
+	}
+
+	.nextpage a{font-weight:bold;}
+	.nextpage a:link{}
+	.nextpage a:visited{}
+	.nextpage a:active{}
+	.nextpage a:hover{text-decoration:none;}
+
+	.menu{
+		font-size:xx-small;
+		text-align:right;
+		margin-top:5px;
+		padding:5px 0;
+		}
+
+	.menu a{font-weight:bold;}
+	.menu a:link{}
+	.menu a:visited{}
+	.menu a:active{}
+	.menu a:hover{}
+
+
+	.comblogbodybottom{
+	}
+
+/* トラックバックURL表示 */
+	.trackbackurltop{
+	}
+
+	.trackbackurlbody{
+		text-align:left;
+		padding:10px 0;
+
+	}
+
+	.trackbackurlttl{
+		color:#2b5695;
+		font-size:x-small;
+		font-weight:bold;
+	}
+
+	.trackbackurl{
+		margin:0 auto;
+		text-align:center;
+		padding:15px;
+	}
+
+	.trackbackurl table{width:400px;margin:0 auto;text-align:center;}
+	input.trackbackbox{width:350px;}
+
+	.trackbackurlbottom{
+	}
+
+/* トラックバック・コメント表示 */
+	a.posttitle{font-weight:bold;}
+	a.posttitle:link{}
+	a.posttitle:visited{}
+	a.posttitle:active{}
+	a.posttitle:hover{text-decoration:none;}
+
+	#trackbacktop,#commenttop{
+	}
+
+	#trackback,#comment{
+		text-align:left;
+		padding:10px 0;
+	}
+
+	#takecomment{
+		text-align:left;
+		padding:10px 0;
+	}
+
+	.trackbackhead,.commenthead,.takecommenthead{
+		color:#2b5695;
+		font-size:x-small;
+		font-weight:bold;
+	}
+
+	#trackbackbody,#commentbody{
+		padding:15px 5px 0px 15px;
+	}
+
+	.trackbackttl,.commentttl{
+		font-size:xx-small;
+	}
+
+	.trackbacktext,.commenttext{
+		font-size:x-small;
+		padding:3px 0 10px 15px;
+	}
+
+	#commentbottom,#trackbackbottom,.formbodybottom{
+	}
+
+	#error{
+		font-size:x-small;
+		line-height:150%;
+		font-weight:bold;
+		padding:10px 5px 10px 15px;
+	}
+
+	#error span{font-weight:normal;}
+
+	.loginon{
+		font-size:x-small;
+		padding:10px 10px 10px 15px;
+	}
+
+	.loginon a{font-weight:bold;}
+	.loginon a:link{}
+	.loginon a:visited{}
+	.loginon a:active{}
+	.loginon a:hover{}
+
+	.loginoff{
+		font-size:x-small;
+		padding:10px 10px 10px 15px;
+	}
+
+	.loginoff a{font-weight:bold;}
+	.loginoff a:link{}
+	.loginoff a:visited{}
+	.loginoff a:active{}
+	.loginoff a:hover{}
+
+	#takecommentbody{
+		padding:0;
+	}
+	
+	.formbodytop{
+	}
+
+	#formbody{
+		margin:0px auto;
+		text-algin:center;
+		padding:15px 20px;
+	}
+
+	.form{
+		font-size:x-small;
+		text-algin:center;
+		margin:0 auto;
+	}
+	
+	.form th{
+		font-weight:bold;
+		padding:2px;
+		text-align:right;
+	}
+
+	.form td{
+		padding:2px;
+	}
+
+	input#author{width:210px;border:1px solid #666;}
+	input#email{width:210px;border:1px solid #666;}
+	input#url{width:210px;border:1px solid #666;}
+	input#bake{}
+	textarea#text{width:350px;height:200px;border:1px solid #666;}
+	input.button{margin-top:20px;width:80px;}
+	
+	#blogcommentbottom{
+	}
+
+	.calendarheadbody{
+	}
+
+	.calendarhead{
+		color:#2b5695;
+		font-size:11px;
+		font-weight:bold;
+		padding:0px 0px 5px 0px;
+		margin-bottom:10px;
+		border-bottom:1px solid #ccc;
+		text-align:center;
+	}
+	
+	.calendarhead a{color:#2b5695;}
+	.calendarhead a:link{}
+	.calendarhead a:visited{}
+	.calendarhead a:active{}
+	.calendarhead a:hover{text-decoration:none;}
+	
+	.calendarpre,.calendarnext{
+		font-size:9px;
+	}
+	
+	.caltop{}
+	.calbody{
+		font-weight:bold;
+		font-size:x-small;
+		text-align:center;
+		margin-bottom:15px;
+	}
+
+	.caltbl{
+		text-align:center;
+		width:160px;
+		margin:0px auto;
+	}
+
+	.caltblwkbg{
+		background:#95aaca;
+	}
+
+	.caltblwk{
+		color:#fff;
+		font-weight:bold;
+		font-size:x-small;
+	}
+
+	.caltblwk td{
+		font-weight:bold;
+		text-align:center;
+		padding:4px 0;
+	}
+
+	.weekday{}
+	.sun{}
+	.sat{}
+
+	.caltbldaybg{
+		background:#fff;
+	}
+
+	.caltblday{
+		color:#666;
+		font-size:xx-small;
+		font-weight:normal;
+	}
+
+
+	.caltblday td{
+		position:center;
+		padding:3px 0;
+	}
+
+	.calendard{
+	}
+	
+	.calon{
+	}
+
+	.caloff{
+	}
+
+	.caltblday a{color:#666;text-decoration:underline;}
+	.caltblday a:link{text-decoration:underline;}
+	.caltblday a:visited{text-decoration:underline;}
+	.caltblday a:active{text-decoration:underline;}
+	.caltblday a:hover{color:#a6a6a6;text-decoration:none;}
+
+	.calbottom{
+	}
+
+
+	.sideheadbody{
+	}
+
+	.sidetitle{
+		color:#2b5695;
+		font-size:x-small;
+		font-weight:bold;
+		letter-spacing:2px;
+		padding:3px;
+		text-align:left;
+		border-bottom:1px solid #ccc;
+	}
+
+	.sidetitle a{color:#2b5695;}
+
+	.side{
+		font-size:x-small;
+		text-align:left;
+		line-height:125%;
+		padding:5px 5px;
+	}
+	
+	.sidebody{
+		text-align:left;
+		padding:3px 0px 3px 0px;
+	}
+
+	.sidebottom{
+		margin-bottom:15px;
+	}
+
+
+ .side a{}
+ .side a:link{}
+ .side a:visited{}
+ .side a:active{}
+ .side a:hover{text-decoration:none;}
+
+	a.ttllink{color:#2b5695;font-weight:bold;}
+	a.ttllink:link{}
+	a.ttllink:visited{}
+	a.ttllink:active{}
+	a.ttllink:hover{text-decoration:none;}
+
+	input.sf{width:122px;margin-right:3px;}
+	.moblogbody,.linkme,.skypeme{text-align:center;}
+	.afbody{text-align:center;padding-bottom:10px;}
+	.afbody img{margin-bottom:3px;}
+	.photo{text-align:center;}
+	.nickname{color:#2b5695;font-size:xx-small;font-weight:bold;margin:10px 0;}
+	.message{font-size:xx-small;text-align:left;margin-bottom:10px;}
+	.blogtimes{margin:20px 0;text-align:center;width:150px;}
+	.point{text-align:center;}
+	.quotetable{width:150px;background:#2b5695;}
+	.quotetable img{width:140px;}
+	.quote{color:#666;font-size:xx-small;padding:1px;background:#fff;}
+
+	.elsehead{
+		padding:3px 0 4px;
+	}
+	.elsebody{text-align:center;}
+	.elsebottom{
+		padding:3px 0 4px;
+	}
+	
+	.elsebody a:link{}
+	.elsebody a:visited{}
+	.elsebody a:active{}
+	.elsebody a:hover{}
+	
+	.checkers{padding-bottom:10px;width:117px;font-size:11px;text-align:left;margin:0 auto;}
+	.reader{padding-bottom:20px;width:117px;font-size:11px;text-align:left;margin:0 auto;}
+	.powered{padding-bottom:10px;}
+	.syndicate{}
+	
+	#footer{
+	}
+
+	.blogbody iframe{width:490px;margin-top:20px;}
+
+	#ad{
+		text-align:center;
+	}
+
+	a.adtitle:link{color:#2b5695;font-weight:bold;}
+	a.adtitle:visited{color:#2b5695;font-weight:bold;}
+	a.adtitle:active{color:#2b5695;font-weight:bold;}
+	a.adtitle:hover{color:#2b5695;font-weight:bold;text-decoration:none;}
+	
+	a.addescription:link{color:#666;text-decoration:none;}
+	a.addescription:visited{color:#666;text-decoration:none;}
+	a.addescription:active{color:#666;text-decoration:none;}
+	a.addescription:hover{color:#666;}
+	
+	a.adurl:link{color:#666;text-decoration:none;}
+	a.adurl:visited{color:#666;text-decoration:none;}
+	a.adurl:active{color:#666;text-decoration:none;}
+	a.adurl:hover{color:#666;}
+	
+	a.adld:link{color:#2b5695;text-decoration:underline;}
+	a.adld:visited{color:#2b5695;text-decoration:underline;}
+	a.adld:active{color:#2b5695;text-decoration:underline;}
+	a.adld:hover{color:#a6a6a6;text-decoration:none;}
+	
+	body.ad{background:#faf9f4;}
