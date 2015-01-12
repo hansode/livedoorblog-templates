@@ -21,11 +21,11 @@ Version:	2006.06.26
 	a:link{}
 	a:visited{}
 	a:active{}
-	a:hover{color:#a6a6a6;text-decoration:none;}
+	a:hover{color:#0f4d8a;text-decoration:none;}
 
 	#header{
 		color:#fff;
-		background:#2b5695;
+		background:#4a4a4a;
 	}
 
 	#header td{
@@ -41,18 +41,19 @@ Version:	2006.06.26
 	#header a:hover{text-decoration:none;}
 
 	#container{
-		width:750px;
+		width:900px;
 		margin:0 auto;
 		padding:0;
-		background:url(http://image.blog.livedoor.com/img/usr/building/bil_back.gif) repeat-y 50% 0;
+                background-color: #f6f6f6;
 		text-align:center;
 		word-break:break-all;
 	}
 
 	#banner,#subbanner{
-		width:750px;
+		width:880px;
 		height:200px;
-		background:url(http://image.blog.livedoor.com/img/usr/building/bil_p.jpg) no-repeat 50% 0;
+		background:url(http://image.blog.livedoor.com/img/usr/building/bil_p.jpg) no-repeat center center;
+                background-size:cover;
 		text-align:left;
 		margin:0 auto;
 	}
@@ -83,7 +84,7 @@ Version:	2006.06.26
 	}
 
 	#blogcontainer{
-		width:710px;
+		width:880px;
 		margin:0 auto;
 		text-align:center;
 		padding-top:20px;
@@ -91,29 +92,28 @@ Version:	2006.06.26
 
 	#content{
 		float:right;
-		width:490px;
+		width:680px;
 		text-align:center;
 		margin:0 auto;
 	}
 
 
 	#blog{
-		width:490px;
 		text-align:left;
 		margin:0 auto;
 	}
 
 	#links{
 		float:left;
-		width:180px;
-		background:#fff;
+		width:190px;
 		margin:0 auto;
 		text-align:center;
 		padding:0px 0px 50px 0;
+                background: #fff;
 	}
 	
 	#linksbody{
-		width:160px;
+		width:180px;
 		margin:10px auto 0;
 		text-align:center;
 	}
@@ -130,6 +130,8 @@ Version:	2006.06.26
 	.fullbody,#articlebody{
 		width:100%;
 		text-align:left;
+		background: #fff;
+		padding: 4px;
 	}
 
 	.datetop,#articletop{
@@ -140,11 +142,11 @@ Version:	2006.06.26
 		font-size:x-small;
 		font-weight:bold;
 		padding:5px 10px 5px 10px;
-		background:#2b5695;
+		background:#4a4a4a;
 	}
 
 	.blogbody{
-		padding:10px 0px;
+		padding:10px;
 	}
 
 	.blogbodybottom{
@@ -152,7 +154,7 @@ Version:	2006.06.26
 	}
 
 	.title{
-		color:#2b5695;
+		color:#4a4a4a;
 		font-size:x-small;
 		font-weight:bold;
 	}
@@ -170,7 +172,10 @@ Version:	2006.06.26
 	}
 	
 	blockquote{
-		border:2px dotted #2b5695;
+border-left-color: rgb(221, 221, 221);
+border-left-style: solid;
+border-left-width: 4px;
+box-sizing: border-box;
 		margin:10px;
 		padding:10px;
 		text-align:left;
@@ -225,11 +230,9 @@ Version:	2006.06.26
 	.menu a:active{}
 	.menu a:hover{}
 
-
 	.comblogbodybottom{
 	}
 
-/* トラックバックURL表示 */
 	.trackbackurltop{
 	}
 
@@ -257,7 +260,6 @@ Version:	2006.06.26
 	.trackbackurlbottom{
 	}
 
-/* トラックバック・コメント表示 */
 	a.posttitle{font-weight:bold;}
 	a.posttitle:link{}
 	a.posttitle:visited{}
@@ -566,3 +568,44 @@ Version:	2006.06.26
 	a.adld:hover{color:#a6a6a6;text-decoration:none;}
 	
 	body.ad{background:#faf9f4;}
+
+.hogeri {
+        overflow: auto;
+        color: #2c3f51;
+        background-color: rgba(102,128,153,0.075);
+        border: 0 solid rgba(102,128,153,0.075);
+        border-left: 8px solid rgba(102,128,153,0.075);
+        border-radius: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 5px 8px;
+        line-height: 110%;
+}
+
+.main pre {
+        overflow: auto;
+        color: #2c3f51;
+        background-color: rgba(102,128,153,0.075);
+        border: 0 solid rgba(102,128,153,0.075);
+        border-left: 8px solid rgba(102,128,153,0.075);
+        border-radius: 0;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        padding: 5px 8px;
+        line-height: 110%;
+}
+
+.main pre code {
+        padding: 0;
+        background-color: transparent;
+}
+
+.main code {
+        color: #2c3f51;
+        background-color: rgba(102,128,153,0.075);
+        padding: 2px 4px;
+}
+
+.twitter-timeline {
+          min-width:180px!important;
+   }
