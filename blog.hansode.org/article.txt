@@ -53,10 +53,8 @@
 <div style="float:right;">
 <a href="http://b.hatena.ne.jp/entry/<$ArticlePermalink$>" class="hatena-bookmark-button" data-hatena-bookmark-title="<$ArticleTitle$>" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 <iframe src="http://www.facebook.com/plugins/like.php?href=<$ArticlePermalink  URIESCAPE$>&amp;send=false&amp;layout=button_count&amp;width=85&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:102px; height:21px;" allowTransparency="true"></iframe> 
-<a href="javascript:location.href='http://del.icio.us/post?v=4;url='+encodeURIComponent('<$ArticlePermalink$>')+';title='+encodeURIComponent('<$ArticleTitle ESCAPE$>')"><img src="http://blog.hansode.org/images/b-del.gif" style="border: none;" alt="del.icio.usに登録" title="del.icio.usに登録" width="16" height="16" /></a>
 <a href="http://twitter.com/share" class="twitter-share-button" data-url="<$ArticlePermalink$>" data-text="<$BlogTitle$>" data-count="horizontal" data-via="hansode" data-lang="ja">Tweet</a>
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<a href="<$RSSUrl$>" style="font-size: 12px;"><img src="http://blog.hansode.org/images/rss.png" alt="fig" width="20" height="20" /></a>
 </div>
 <br clear="all" />
 <!-- bookmarklet -->
