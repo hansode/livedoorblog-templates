@@ -32,7 +32,7 @@
 <IfDateChanged><div class="datebody"><h2 class="date"><$ArticleDate$></h2></div></IfDateChanged>
 <div class="blogbodytop"></div>
 <div class="blogbody"> 
-<div class="titlebody"><h3 class="title"><$ArticleTitle ESCAPE$><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3></div>
+<div class="titlebody"><h3 class="title"><a href="<$ArticlePermalink$>"><$ArticleTitle ESCAPE$></a><IfArticleRating><$ArticleRatingIcon$></IfArticleRating></h3></div>
 
 <!-- bookmarklet上 -->
 <div style="float:right;">
