@@ -2,22 +2,19 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" id="ldblog-standard">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
-<title><$ArticleTitle ESCAPE$> | <$BlogTitle ESCAPE$></title>
-<meta name="description" content="<$BlogDescription$>" />
-<meta name="keywords" content="半袖,半袖野郎" />
-<meta http-equiv="Content-Style-Type" content="text/css" />
-<meta http-equiv="Content-Script-Type" content="text/javascript" />
-<link rel="stylesheet" href="<$CSSUrl$>" type="text/css" />
-<link rel="alternate" type="application/rss+xml" title="RSS" href="<$RSSUrl$>" />
-<link rel="alternate" type="application/atom+xml" title="Atom" href="<$AtomUrl$>" />
+<$HeadSectionCommon$>
+<meta name="description" content="<$ArticleDescription ESCAPE$>" />
+<$OGP$>
 <link rel="alternate" media="handheld" type="application/xhtml+xml" href="<$ArticleMobilePermalink$>" />
+<IfFoafUrl><link rel="meta" type="application/rdf+xml" title="FOAF" href="<$FoafUrl$>" /></IfFoafUrl>
+<title><$ArticleTitle ESCAPE$> | <$BlogTitle ESCAPE$></title>
 <script type="text/javascript" src="<$EmojiJsUrl$>"></script>
 <script type="text/javascript" src="<$MiscJsUrl$>"></script>
 </head>
-<body>
+<body class="wave article">
 <IfCommentNeedAuth><script type="text/javascript" src="<$BlogAuthJsUrl$>"></script></IfCommentNeedAuth>
 <a name="top"></a>
+<$BlogHeader$>
 
 <div id="container"> 
 <div id="banner"> 
@@ -28,10 +25,11 @@
 <div id="blogcontainer">
 <div id="content"> 
 <div id="blog">
+<SetVar UseTitlesForPager>1</SetVar><$ArticlePager$>
 
-<!-- ### 半袖blog 1つ目記事上 ### -->
-
+<div id="articletop"></div>
 <div id="articlebody">
+<!-- google_ad_section_start -->
 <$TrackBackAutoDiscovery$>
 <div class="datebody"><h2 class="date"><$ArticleDate$></h2></div>
 <div class="blogbodytop"></div>
@@ -49,7 +47,7 @@
 </div>
 <div class="main"><$ArticleBody$><br /><br clear="all" /></div>
 <a name="more"></a>
-<IfArticleBodyMore><div class="mainmore"><$ArticleBodyMore$><br /><br clear="all" /></div></IfArticleBodyMore>
+<IfArticleBodyMore><div class="mainmore"><$ArticleBodyMore$><br><br clear="all"></div></IfArticleBodyMore>
 
 <!-- bookmarklet -->
 <div style="float:right;">
@@ -63,29 +61,20 @@
 <br clear="all" />
 <!-- bookmarklet -->
 
-<IfHasArticleTags><div class="article_tags">タグ: 
-<ArticleTagsLoop><a href="<$ArticleTagAggregateUrl$>" rel="tag"><$ArticleTag ESCAPE$></a> 
-</ArticleTagsLoop></div></IfHasArticleTags>
-<div class="posted">半袖 at <$ArticleTime$><IfArticleAllowComment>│<a href="#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing><IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
-
+<$PortalLinks$>
+<!-- google_ad_section_end -->
+<div class="article-social-btn">
+  <$ArticleToolBox$>
+</div>
+<div class="posted"><$ArticleAuthorNickname$> at <$ArticleTime$><IfArticleAllowComment>│<a href="#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing><IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
 <div class="menu"><a href="<$BlogUrl$>">このBlogのトップへ</a><IfPrevArticle>│<a href="<$PrevArticle$>">前の記事</a></IfPrevArticle><IfNextArticle>│<a href="<$NextArticle$>">次の記事</a></IfNextArticle></div>
-
+<$Advertise$>
 </div>
 <div class="comblogbodybottom"></div>
-
-<!-- ### 半袖blog 個別記事下 ### -->
 
 <div id="fb-root"></div>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <fb:comments href="<$ArticlePermalink$>" num_posts="2" width="450"></fb:comments>
-
-<div id="ad">
-<!-- amazon -->
-<script type="text/javascript"><!--
-  amazon_ad_tag = "kialpi-22";  amazon_ad_width = "468";  amazon_ad_height = "60";  amazon_ad_logo = "hide";  amazon_ad_border = "hide";//--></script>
-<script type="text/javascript" src="http://www.assoc-amazon.jp/s/ads.js"></script>
-<!-- amazon -->
-</div>
 
 <IfArticleAllowPing>
 <div class="trackbackurltop"></div>
@@ -133,85 +122,11 @@
 <div id="commentbottom"></div>
 </IfArticleCommentCount>
 
-<IfArticleAllowComment>
-
-<div class="formbodytop"></div>
-<div id="takecomment"> 
-<h3 class="takecommenthead">この記事にコメントする</h3>
-<$CommentPostError$>
-<div id="takecommentbody">
-
-<IfCommentNeedAuth>
-<script language="JavaScript">
-<!--
-if(authorized_name) {
-document.write('<div class="loginon">ようこそ' + authorized_name + 'さん&nbsp;&nbsp;&nbsp;&nbsp;<a href="<$CommentLogoutUrl$>">ログアウト</a></div>');
-}
-else {
-document.write('<div class="loginoff">このBlogにコメントするには<a href="<$CommentLoginUrl$>">ログイン</a>が必要です。</div>');
-}
--->
-</script>
-</IfCommentNeedAuth>
-</div>
-</div>
-<div id="formbody"> 
-<form action="<$ArticleCommentUrl$>#errors" method="POST" name="comment_form" onSubmit="javacript:setCommentAuthor(this); return submitOnce(this.button);">
-<table cellpadding="0" cellspacing="0" border="0" class="form">
-<tr> 
-<th nowrap class="auther">名前: </th>
-<td colspan="3"><IfCommentNeedAuth><script language="JavaScript"><!--
-if(authorized_name)
-document.write(authorized_name);
-else
-document.write('<input id="author" name="author" />');
---></script><Else><input id="author" name="author" /></IfCommentNeedAuth></td>
-</tr>
-<tr> 
-<th nowrap class="email">メール: </th>
-<td colspan="3"><input id="email" name="email" /></td>
-</tr>
-<tr> 
-<th nowrap class="url">URL: </th>
-<td colspan="3"><input id="url" name="url" /></td>
-</tr>
-<tr> 
-<td nowrap>&nbsp;</td>
-<td nowrap>情報を記憶: 
-<input id="bake" type="checkbox" name="cookie" style="padding:0;margin:0px;" /></td>
-<td align="right" nowrap>評価: 
-<select id="rank" name="rating">
-<option value="">--</option>
-<option value="1">1（最低）</option>
-<option value="2">2</option>
-<option value="3">3</option>
-<option value="4">4</option>
-<option value="5">5（最高）</option>
-</select></td>
-<td align="right" nowrap><input type="radio" id="radio" value="face" name="rating_icon" />
-顔&nbsp;&nbsp;&nbsp;
-<input type="radio" id="radio" value="star" name="rating_icon" />
-星</td>
-</tr>
-<tr> 
-<td nowrap>&nbsp;</td>
-<td colspan="3"><a href="javascript:void(0);" id="emojiLink1" onClick="showEmojiPanel(this.id, 'text')"><img src="http://parts.blog.livedoor.jp/img/usr/cmn/tool.gif" id="tool" width="18" height="18" border="0" /></a></td>
-</tr>
-<tr> 
-<td nowrap>&nbsp;</td>
-<td colspan="3"><textarea id="text" name="body" rows="10" cols="50"></textarea><div id="emoji" style="position:absolute; background-color:#FFFFFF; left: 30px; border:1 solid #000000; margin:0 0 0 0; padding:0 0 0 0; display:none;"></div></td>
-</tr>
-<tr> 
-<td nowrap>&nbsp;</td>
-<td colspan="3" align="center"><input type="submit" value=" 投稿する " class="button" name="button" /></td>
-</tr>
-</table>
-</form>
-</div>
-<div class="formbodybottom"></div>
-</IfArticleAllowComment>
+<$CommentForm$>
 </div>
 <div id="articlebottom"></div>
+
+<$ArticlePager$>
 </div>
 <div id="blogcommentbottom"></div>
 </div>
@@ -222,19 +137,19 @@ document.write('<input id="author" name="author" />');
 <div id="linksbody">
 <$PluginList_A$>
 <$PluginList_B$>
+<div class="elsehead"></div>
+<div class="elsebody"><$LDServices$></div>
+<div class="elsebottom"></div>
 </div>
 <div id="linksbottom"></div>
 </div>
 	
-<br clear="all" />
+<br clear="all">
 </div><!-- End of blogcontainer-->
 
-<div id="footer">
-</div>
-
+<div id="footer"></div>
 </div><!-- End of container-->
 <div id="outfooter"></div>
-
 <script type="text/javascript" language="javascript">
 <!--
 loadCommentAuthor(document.comment_form);
