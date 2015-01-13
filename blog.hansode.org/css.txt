@@ -172,10 +172,10 @@ Version:	2006.06.26
 	}
 	
 	blockquote{
-border-left-color: rgb(221, 221, 221);
-border-left-style: solid;
-border-left-width: 4px;
-box-sizing: border-box;
+		border-left-color: rgb(221, 221, 221);
+		border-left-style: solid;
+		border-left-width: 4px;
+		box-sizing: border-box;
 		margin:10px;
 		padding:10px;
 		text-align:left;
@@ -569,19 +569,6 @@ box-sizing: border-box;
 	
 	body.ad{background:#faf9f4;}
 
-.hogeri {
-        overflow: auto;
-        color: #2c3f51;
-        background-color: rgba(102,128,153,0.075);
-        border: 0 solid rgba(102,128,153,0.075);
-        border-left: 8px solid rgba(102,128,153,0.075);
-        border-radius: 0;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        padding: 5px 8px;
-        line-height: 110%;
-}
-
 .main pre {
         overflow: auto;
         color: #2c3f51;
@@ -608,4 +595,4 @@ box-sizing: border-box;
 
 .twitter-timeline {
           min-width:180px!important;
-   }
+}
