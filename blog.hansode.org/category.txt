@@ -52,6 +52,7 @@
 <$PortalLinks$>
 <div class="article-social-btn">
   <$ArticleToolBox$>
+  <a href="<$ArticleEditUrl$>">編集</a>
 </div>
 <div class="posted"><$ArticleAuthorNickname$> at <$ArticleTime$>｜<a href="<$ArticlePermalink$>">Permalink</a><IfArticleAllowComment>│<a href="<$ArticlePermalink$>#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="<$ArticlePermalink$>#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing></div>
 <IfFirstArticle><$Advertise$></IfFirstArticle>

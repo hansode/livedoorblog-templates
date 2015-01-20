@@ -62,6 +62,7 @@
 <!-- google_ad_section_end -->
 <div class="article-social-btn">
   <$ArticleToolBox$>
+  <a href="<$ArticleEditUrl$>">編集</a>
 </div>
 <div class="posted"><$ArticleAuthorNickname$> at <$ArticleTime$><IfArticleAllowComment>│<a href="#comments">Comments(<$ArticleCommentCount$>)</a></IfArticleAllowComment><IfArticleAllowPing>│<a href="#trackback">TrackBack(<$ArticlePingCount$>)</a></IfArticleAllowPing><IfArticleCategory1>│<a href="<$ArticleCategory1Url$>"><$ArticleCategory1$></a>&nbsp;</IfArticleCategory1><IfArticleCategory2>|&nbsp;<a href="<$ArticleCategory2Url$>"><$ArticleCategory2$></a></IfArticleCategory2></div>
 <div class="menu"><a href="<$BlogUrl$>">このBlogのトップへ</a><IfPrevArticle>│<a href="<$PrevArticle$>">前の記事</a></IfPrevArticle><IfNextArticle>│<a href="<$NextArticle$>">次の記事</a></IfNextArticle></div>
